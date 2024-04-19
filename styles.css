@@ -20,7 +20,7 @@
 .logo-container,  .nav-main, nav ul {
     padding: 12px 0 12px 165px;
 }
-.news-headings, .sponsors-section, .editors-choice, .latest-videos, .latest-news, .latest-fpl-news, .no-room-for-racism {
+.news-headings, .sponsors-section, .editors-choice, .latest-videos, .latest-news, .latest-fpl-news, .no-room-for-racism, .nike-advert, .club-news {
     padding: 2rem 1rem 0.5rem 10vw;
     display: grid;
     grid-template-columns: 325px minmax(40%, 625px)  minmax(300px, 25%);
@@ -318,6 +318,8 @@ figure {
     font-size: 1.2rem;
 }
 
+
+
 /* side-bar */
 .side-bar {
     position: absolute;
@@ -341,11 +343,16 @@ figure {
     align-items: center;
     justify-content: flex-start;
     gap: 1rem;
+    position: relative;
+}
+.five .small-banner{
+    justify-content: center;
 }
 .small-banner h4 {
     color: var(--navtext-color);
     font-size: 1.6rem;
     font-weight: 700;
+    z-index: 2;
 }
 
 .news-headings-box.one .small-banner{
@@ -353,6 +360,7 @@ figure {
 }
 .ucl-logo {
     height: 42px;
+    z-index: 1;
 }
 .box-header p {
     font-family: lato, sans-serif;
@@ -405,9 +413,10 @@ figure {
     padding: 0.2rem;
 }
 .dates {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.2rem;
     margin: .5rem 0;
+    color: black;
 }
 .fixtures {
     margin:  0.5rem auto;
@@ -422,7 +431,9 @@ figure {
 }
 .fixtures > a > p{
     font-size: 0.9rem;
-
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
 }
 .fixtures a:hover  {
     text-decoration: underline;
@@ -433,22 +444,31 @@ figure {
 .news-headings-box.two .small-banner{
     background: linear-gradient(90deg, rgb(0, 21, 17), rgb(68, 50, 0))
 }
+.news-headings-box.three .small-banner{
+    background: linear-gradient(90deg, rgb(0, 25, 4) 30%, rgb(0, 43, 9));
+}
+.news-headings-box.four .small-banner, .news-headings-box.five .small-banner{
+    background: linear-gradient(90deg, rgba(65, 195, 251, 0.741) 30%, rgba(13, 131, 249, 0.828));
+}
+
 .match-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-bottom: 0.8px solid var(--borderbottom-color);
     width: 95%;
-    min-height: 3rem;
     padding: 0.5rem;
 }
-.three .match-container:hover{
-    background: linear-gradient(90deg, rgb(35, 116, 255) 30%, rgb(166, 13, 249));
+
+
+
+.four .match-container:hover{
+    background: linear-gradient(90deg, rgb(26, 182, 249) 30%, rgb(166, 13, 249));
 }
-.three .match-container:hover {
+.four .match-container:hover {
     color: #fff;
 }
-.three .match-container:hover .time {
+.four .match-container:hover .time {
     border: 1px solid #fff;
     border-radius: 5px;
 }
@@ -456,9 +476,244 @@ figure {
     padding: 0;
 }
 .tv-logo img {
-    height: 2.8rem;
+    height: 2rem;
     object-fit: cover;
 }
+.side-bar svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    fill: rgba(143, 159, 231, 0.285);
+}
+.news-headings-box.four, .news-headings-box.three,  .news-headings-box.five, .news-headings-box.six{
+    border: 1px solid var(--borderbottom-color);
+}
+
+.standing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.standing thead, .standing tbody {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+}
+tr{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+thead tr {
+    margin-top: 0.5rem;
+    background-color: var(--hoverbackground-color);
+}
+tbody tr {
+    border-bottom: 1px solid var(--borderbottom-color);
+}
+th, td{
+    padding: 0.5rem;
+} 
+.club {
+    min-width: 160px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+.club img {
+    height: 1.5rem;
+    object-fit: cover;
+}
+
+.pos {
+    width: 2.5rem;
+}
+thead .club {
+    padding-left: 1.5rem;
+}
+th {
+    font-family: roboto;
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: #87668a;
+    padding: 0.5rem 0.5rem;
+}
+
+    
+
+tbody .pos {
+    color: var(--navmain-color);
+    font-size: 0.8rem;
+    font-weight: 300rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.move-icon {
+    font-size: 0.5rem;
+
+}
+.move-icon.up {
+    color: rgb(47, 255, 64);
+}
+.move-icon.down {
+    color: red;
+}
+
+td.club a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--navmain-color);
+}
+td.club a:hover {
+    text-decoration: underline;
+}
+
+td.pl,  td.gd{
+    font-size: 0.9rem;
+    font-family: lato, Arial;
+    font-weight: 300;
+    color: var(--navmain-color);
+   
+}
+td.gd{
+    min-width: 35px;
+}
+td.pl {
+    margin-left: -0.5rem;
+}
+
+td.pts {
+    font-size: 0.9rem;
+    font-family: lato, Arial;
+    font-weight: 800;
+}
+th.gd, th.pl{
+    padding-right: 1rem;
+}
+.standing .null {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: #76766f;
+}
+.review {
+    padding: 0.5rem;
+    font-size: 0.4rem;
+}
+.review p {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    color: var(--navmain-color);
+}
+
+/**/
+.six {
+    overflow: visible;
+    position: relative;
+    margin-top: 1rem;
+
+}
+.top-title {
+    position: absolute;
+    top: -2rem;
+    color: var(--navmain-color);
+    font-weight: 900;
+    font-size: 1.3rem;
+    font-family: roboto, Arial, Helvetica, sans-serif;
+}
+
+.top-part {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 335px;
+    overflow: hidden;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.six .feature-content {
+    position: relative;
+}
+.feature-team img {
+    height: 5rem;
+}
+.feature-content {
+    padding: 0.5rem 0 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.feature-content p{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    color: var(--navmain-color);
+}
+.feature-content span {
+    font-family: lato, Arial;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.six .svg {
+    position: absolute;
+}
+.feature-img {
+    background-color: rgba(17, 113, 174, 0.565);
+    z-index: 1;
+    display: flex;
+    align-items: end;
+}
+.player .feature-img {
+    background-color: rgba(46, 46, 46, 0.919);
+}
+.bottom-part {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 1rem;
+}
+
+.bottom-part .flag {
+    height: 1.8rem;
+}
+.first-name, .last-name, .below p:not(.country) {
+    color: var(--navmain-color);
+    font-weight: 900; 
+}
+.six a:hover .first-name, 
+.six a:hover .last-name,
+.six a:hover .below p:not(.country){
+    text-decoration: underline;
+}
+
+.last-name {
+    font-size: 2.2rem;
+}
+.below {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.natives {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+.country, .position {
+    color: var(--navmain-color);
+    font-size: 0.8rem;
+
+}
+
 
 
 /* sponsors-section */
@@ -660,4 +915,61 @@ figcaption, a .small-caption {
     max-width: 70%;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
+}
+
+
+/* nike-advert */
+.nike-advert-container {
+    grid-column: 2/-1;
+    background: linear-gradient(180deg, rgb(226, 75, 73) 30%, rgb(254, 91, 27));
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 3fr;
+    position: relative;
+    padding: 1.5rem 0;
+    border-radius: 2px;
+}
+.white-tria {
+    height: 100%;
+    fill: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.adv-content {
+    grid-column: 2/-1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+    max-width: 90%;
+    gap: 1rem;
+    color: var(--navtext-color);
+}
+.adv {
+    font-size: 0.9rem;
+}
+.adv-title {
+    color: var(--navtext-color);
+    font-weight: 900;
+    font-size: 1.7rem;
+}
+.adv-link {
+    background-color: white;
+    width: 220px;
+    border-radius: 5px;
+}
+.adv-link a {
+    text-decoration: none;
+}
+.adv-link p {
+    text-align: center;
+    padding: 0.7rem 0;
+}
+.adv-link:hover {
+    background-color: var(--hoverbackground-color);
+}
+.nike-ball {
+    width: 180px;
+    padding: 1rem;
+    z-index: 1;
 }
