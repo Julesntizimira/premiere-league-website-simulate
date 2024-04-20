@@ -19,7 +19,7 @@ async function paginateSponsors(a, b) {
 
     // Add new logos after the transition
     setTimeout(() => {
-        for (let i = a; i < b; i++) {
+        for (let i = a; i <= b; i++) {
             sponsorsContainer.append(createLogo(sponsors[i]));
         }
     }, 500); // Wait for the transition to finish (adjust timing as needed)
@@ -37,12 +37,17 @@ async function paginateSponsors(a, b) {
 let a = 0;
 let b = 0;
 window.setInterval(() => {
-    if (a === 0) {
-        a = 4;
-        b = 7;
-    } else {
+    if (a === 6) {
+        // a = 4;
+        // b = 7;
         a = 0;
-        b = 4;
+        b = a + 1;
+
+    } else {
+        // a = 0;
+        // b = 4;
+        a++;
+        b++;
     }
     paginateSponsors(a, b);
 }, 3000);
