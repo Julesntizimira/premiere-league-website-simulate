@@ -48,6 +48,9 @@ window.setInterval(() => {
         // b = 4;
         a++;
         b++;
+        if(b == 7) {
+            b = 0;
+        }
     }
     paginateSponsors(a, b);
 }, 3000);
