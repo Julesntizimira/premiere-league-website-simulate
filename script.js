@@ -51,3 +51,19 @@ window.setInterval(() => {
     }
     paginateSponsors(a, b);
 }, 3000);
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const stickyElement = document.querySelector('.logo-white-back');
+    const mediaQuery = window.matchMedia('(min-width: 900px)');
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 64 && mediaQuery.matches) { // Adjust 100 to your desired scroll position
+            stickyElement.classList.add('unhide-logo-background');
+            document.querySelector('.pr-logo').classList.add('medium');
+        } else {
+            stickyElement.classList.remove('unhide-logo-background');
+            document.querySelector('.pr-logo').classList.remove('medium');
+        }
+    });
+});
