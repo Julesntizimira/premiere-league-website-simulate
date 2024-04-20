@@ -14,8 +14,14 @@
     --hoverbackground-color: rgb(241, 240, 240);
 }
 /* body {
-    overflow-y: scroll;
+    overflow-x: clip;
 } */
+.nav-sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 100;
+}
 
 /* universal settings */
 .logo-container,  .nav-main, nav ul {
@@ -1090,6 +1096,8 @@ figcaption, a .small-caption {
 } 
 .club-news svg {
     z-index: -1;
+    min-width: 200px;
+    min-height: 97px;
 }
 .img-cont.yellow svg {
     fill: rgba(255, 196, 0, 0.803);
@@ -1126,7 +1134,6 @@ figcaption, a .small-caption {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
     flex-wrap: wrap;
     margin: 1rem 3rem 1.5rem;
     padding: 1rem 3rem; 
@@ -1142,10 +1149,13 @@ figcaption, a .small-caption {
     justify-content: space-between;
     align-items: center;
     height: 90px;
+    min-width: 170px;
 }
 .sponsor-logo-cont p{
     color: black;
     font-size: 0.7rem;
+    width: 160px;
+    text-align: center;
 }
 .sponsors-section-two img{
     max-width: 100px;
@@ -1188,6 +1198,9 @@ footer a > li {
     padding-left: 3rem;
     padding-bottom: 3rem;
     flex-wrap: wrap;
+}
+.footer-main a {
+    text-decoration: none;
 }
 .footer-column {
     display: flex;
@@ -1383,6 +1396,9 @@ li > i {
     }
     .medium-img-container{
         width: 100%;
+    }
+    html, body {
+        overflow-x: clip;
     }
 }
 @media (max-width: 700px) {
