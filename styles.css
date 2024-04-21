@@ -89,6 +89,13 @@ figcaption, a .small-caption {
     margin-bottom: -0.5rem;
 }
 
+.editors-choice-container > .fixtures, .right-grid > .fixtures{
+    display: none;
+}
+.right-grid > .fixtures a{
+    text-decoration: none;
+}
+
 /* logo container */
 
 /* .header {
@@ -1437,6 +1444,16 @@ li > i {
         margin-left: 0;
         margin-right: 0;
     }
+    .editors-choice-container > .fixtures, .right-grid > .fixtures{
+        display: block;
+    }
+    .section-title > a {
+        display: none;
+    }
+    .no-room-for-racism .section-title{
+        padding: 0.8rem;
+    }
+
 }
 @media (max-width: 640px) {
     .nike-ball{
