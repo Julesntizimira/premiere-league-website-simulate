@@ -12,6 +12,7 @@
     --navtext-color: #fff;
     --borderbottom-color: rgb(212, 212, 212);
     --hoverbackground-color: rgb(241, 240, 240);
+    --dropdown-color:  #963cff;
 }
 body {
     position: relative;
@@ -150,14 +151,19 @@ nav {
     /* grid-template-columns: 70% 25% 5%; */
     /* height: 4rem; */
     position: relative;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 .nav-link-container {
     display: flex;
 }
 .nav-link {
-    padding: 0 20px;
+    padding: 20px 20px;
     display: flex;
     align-items: center;
+    position: relative;
+    cursor: pointer;
+    min-height: 4rem;
 }
 .nav-link h2{
     display: flex;
@@ -168,11 +174,98 @@ nav {
 .nav-link > h2 > i {
     font-size: 0.6em;
 }
+.drop-down {
+    display: none;
+    background-color: var(--dropdown-color);
+    position: absolute;
+    top: 4rem;
+    z-index: 5;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+    transition: 0.3s ease-in-out;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.menu-drop-down > a {
+    text-decoration: none;
+}
+.menu-drop-down > a:hover li {
+    text-decoration: underline;
+}
+.menu-drop-down > a > li {
+    color: var(--navtext-color);
+    list-style-type: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.5rem;
+}
+
+.menu-drop-down {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+
+    padding: 0.5rem;
+}
+.caret {
+    color: var(--dropdown-color);
+    position: absolute;
+    font-size: 1.5rem;
+    top: -0.85rem;
+    left: 47%;
+    z-index: 6;
+}
+.nav-link:hover .drop-down {
+    display: block;
+}
+.nav-link:nth-child(1) .drop-down{
+    left: -1.5rem;
+    right: -1.5rem;
+}
+.nav-link:nth-child(1) .menu-drop-down {
+    height: 15.5rem;
+}
+.nav-link:nth-child(2) .drop-down{
+    left: -5rem;
+    right: -5rem;
+}
+.nav-link:nth-child(2) .menu-drop-down {
+    height: 6rem;
+}
+.nav-link:nth-child(3) .drop-down{
+    left: -2.5rem;
+    right: -2.5rem;
+}
+.nav-link:nth-child(3) .menu-drop-down {
+    height: 12rem;
+}
+.nav-link:nth-child(4) .drop-down{
+    left: -8rem;
+    right: -8rem;
+}
+.nav-link:nth-child(4) .menu-drop-down {
+    height: 14rem;
+}
+
+.nav-link:nth-child(5) .drop-down{
+    left: -6rem;
+    right: -6rem;
+}
+.nav-link:nth-child(5) .menu-drop-down {
+    height: 15.5rem;
+}
+
+
+
+
+
 .nav-main-right {
     display: flex;
     align-items: center;
     gap: 1rem;
     padding-right: 1rem;
+    padding-top: 0;
 }
 .login-container {
     display: flex;
@@ -342,6 +435,8 @@ ul > li:hover .nav-bottom-bar {
 }
 
 
+
+
 /* main */
 
 /* news-headings */
@@ -355,8 +450,6 @@ ul > li:hover .nav-bottom-bar {
 .news-headings a {
     color: var(--navtext-color);
     text-decoration: none;
-    
-
 }
 .medium-img-container a, .large-img-container a{
     text-decoration: none;
@@ -508,7 +601,8 @@ figure {
     justify-items: center;
 }
 .match {
-    display: flex;
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
@@ -527,13 +621,28 @@ figure {
 .team {
     display: flex;
     align-items: center;
-    gap: 0.3rem;
+    gap: 0.5rem;
 }
+
+.match > .team:nth-child(1) {
+    justify-content: end;
+}
+.match > .team:nth-child(2) {
+    justify-content: start;
+}
+
+
 .team img {
-    height: 1.5rem;
+    height: 2rem;
+    width: 2rem;
+    object-fit: contain;
 }
 .team p {
     font-weight: 800;
+}
+.time{
+    display: flex;
+    justify-content: center;
 }
 .time p {
     font-size: 0.8rem;
@@ -618,18 +727,18 @@ figure {
     border: 1px solid var(--borderbottom-color);
 }
 
-.standing {
+/* .standing {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
+/* } 
+
+/*
 .standing thead, .standing tbody {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 0.5rem;
-    width: 100%;
 }
 tr{
     display: flex;
@@ -730,7 +839,157 @@ th.gd, th.pl{
     width: 5px;
     border-radius: 50%;
     background-color: #76766f;
+} */
+
+table {
+    display: table;
+    border-collapse: collapse;
 }
+.standing {
+    width: 100%;
+}
+
+
+tbody .pos {
+    color: var(--navmain-color);
+    font-weight: 300rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+.move-icon {
+    font-size: 0.5rem;
+
+}
+.move-icon.up {
+    color: rgb(47, 255, 64);
+}
+.move-icon.down {
+    color: red;
+}
+
+
+.club {
+    text-align: start;
+    vertical-align: middle;
+    /* width: 25%; */
+}
+.club img {
+    height: 2rem;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+td.club a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--navmain-color);
+}
+td.club a > span {
+    font-weight: 600;
+    color: var(--navmain-color);
+}
+td.club a:hover {
+    text-decoration: underline;
+}
+
+
+.next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.next div {
+    height: 1.8rem;
+    width: 1.8rem;
+    border-radius: 50%;
+    border: 1px solid var(--borderbottom-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.next div img {
+    height: 1.5rem;
+    object-fit: contain;
+}
+th, td{
+    padding: 1rem 0.5rem;
+    text-align: center;
+    vertical-align: middle;
+} 
+th, th span {
+    font-family: roboto;
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: #87668a;
+    padding: 0.5rem 0.5rem;
+}
+td.pts {
+    font-size: 0.9rem;
+    font-family: lato, Arial;
+    font-weight: 800;
+}
+td{
+    font-size: 0.9rem;
+    font-family: lato, Arial;
+    font-weight: 300;
+    color: var(--navmain-color);
+   
+}
+thead tr {
+    margin-top: 0.5rem;
+    background-color: var(--hoverbackground-color);
+}
+tbody tr {
+    border-bottom: 1px solid var(--borderbottom-color)
+}
+
+.standing .null {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: #76766f;
+} 
+
+.table-form ul {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.table-form ul li {
+    list-style-type: none;
+    color: var(--navtext-color);
+    border-radius: 50%;
+    width: 1.6rem;
+    height: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.table-form ul li abbr {
+    text-decoration: none;
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+li.win {
+    background-color: green;
+}
+li.loose {
+    background-color: red;
+}
+.more i {
+    color: var(--navmain-color);
+}
+
+
+
+
+
+
+
+
 .review {
     padding: 0.5rem;
     font-size: 0.4rem;
@@ -1222,7 +1481,7 @@ footer a > li {
 }
 .footer-main {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     align-items: start;
     padding-left: 3rem;
     padding-bottom: 3rem;
@@ -1257,9 +1516,8 @@ li > i {
 .footer-bottom {
     color: var(--navtext-color);
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 2rem;
-    gap: 0.5rem;
     align-items: center;
 }
 .footer-bottom a {
@@ -1282,6 +1540,18 @@ li > i {
     height: 3px;
     background-color: #fff;
     border-radius: 50%;
+}
+.footer-bottom-left {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.footer-bottom-left div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
 }
 
 
@@ -1312,6 +1582,53 @@ li > i {
         display: grid;
         grid-template-columns: 1fr 1fr;
       
+    }
+
+    .nav-link:nth-child(1) .drop-down{
+        left: -2rem;
+        right: -2rem;
+    }
+    .nav-link:nth-child(1) .menu-drop-down {
+        height: 15.5rem;
+    }
+    .nav-link:nth-child(2) .drop-down{
+        left: -5.5rem;
+        right: -5.5rem;
+    }
+    .nav-link:nth-child(2) .menu-drop-down {
+        height: 6rem;
+    }
+    .nav-link:nth-child(3) .drop-down{
+        left: -3rem;
+        right: -3rem;
+    }
+    .nav-link:nth-child(3) .menu-drop-down {
+        height: 12rem;
+    }
+    .nav-link:nth-child(4) .drop-down{
+        left: -8.5rem;
+        right: -8.5rem;
+    }
+    .nav-link:nth-child(4) .menu-drop-down {
+        height: 14rem;
+    }
+    
+    .nav-link:nth-child(5) .drop-down{
+        left: -6.5rem;
+        right: -6.5rem;
+    }
+    .nav-link:nth-child(5) .menu-drop-down {
+        height: 15.5rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem
+    }
+    .footer-bottom-left {
+        flex-direction: column;
+        gap: 1rem;
     }
 
 }
