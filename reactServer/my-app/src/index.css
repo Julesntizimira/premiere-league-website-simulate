@@ -440,7 +440,10 @@ ul > li:hover .nav-bottom-bar {
 
 
 
-/* main */
+/* main */ 
+main {
+  color: var(--navmain-color); 
+}
 
 /* news-headings */
 
@@ -545,7 +548,6 @@ figure {
 
 
 /* side-bar */
-
 .side-bar {
   position: absolute;
   top: -1rem;
@@ -884,8 +886,6 @@ li.loose {
 .more i {
   color: var(--navmain-color);
 }
-
-
 .review {
   padding: 0.5rem;
   font-size: 0.4rem;
@@ -952,7 +952,7 @@ li.loose {
 }
 .feature-img {
   background-color: rgba(17, 113, 174, 0.565);
-  z-index: 1;
+
   display: flex;
   align-items: end;
 }
@@ -1200,7 +1200,7 @@ figcaption, a .small-caption {
   border-bottom-right-radius: 10px;
 }
 
-.no-room-for-racism .small-caption {
+.no-room-for-racism .small-img-container .small-caption {
   background-color: #19031a;
   color: var(--navtext-color);
   padding: 0.2rem 0.2rem 0.2rem 0.4rem;

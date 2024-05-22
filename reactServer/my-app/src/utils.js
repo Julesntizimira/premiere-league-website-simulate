@@ -802,6 +802,37 @@ export const teams = [
         color: "red"
     },
 ]
+export const players = [
+    {
+        firstname: "Erling",
+        lastname: "Haaland",
+        team: teams[1],
+        image_url: "./images/stats/p223094.png",
+        position: "forward",
+        country: {
+            name: "England",
+            flag_url: "images/players/englandflag.png"
+        },
+        goals: 27,
+        appearances: 113,
+        assists: 217,
+        passes: 86,
+    },
+    {
+        firstname: "Ollie",
+        lastname: "Watkins",
+        team: teams[12],
+        image_url: "./images/stats/p178301.png",
+        position: "forward",
+        country: {
+            name: "France",
+            flag_url: "images/players/franceflag.png"
+        },
+        wins: "13",
+        assists: "",
+        passes: "",
+    }
+]
 
 export const navinationPages = [
     {
@@ -853,6 +884,11 @@ export const navinationPages = [
         name: "Watch Live",
         path: "watch_live",
         element: "WatchLive",
+    },
+    {
+        name: "Tickets",
+        path: "tickets",
+        element: "Tickets",
     },
     {
         name: "Clubs",
@@ -2496,4 +2532,240 @@ export const pages = {
         ],
         standingPage: true,
     },
+    video: {
+        heroSection: [
+            {
+                title: "Watch Man City lift the 2023/24 Premier League Trophy",
+                subtitle: "Enjoy Man City's celebrations as they are crowned champions for an unprecedented fourth successive season",
+                image_url: "images/video/Bsawmrzz.webp"
+            },
+            {
+                title: "FPL champion Jonas Sand Labakk on Fantasy Show",
+                subtitle: "After beating almost 11m FPL managers to the 2023/24 title, the Norwegian chats about the secrets of his success",
+                image_url: "images/video/4bgpUJkS.webp"   
+            },
+            {
+                title: "Fantasy Show: Team of the Season 2023/24",
+                subtitle: "How many of these players were big points scorers for your squad? It’s the highest-scoring FPL team of the season!",
+                image_url: "images/video/sRGE3hpw.webp"
+            }
+        ],
+        mostWatched: [
+            {
+                image_url: "images/4VUWT9he.webp",
+                caption: "Video", 
+                subtitle: "Watch: How the title race swung Man City's way in Matchweek 33",
+                title: "Guardiola: We know Arsenal will challenge us for next few years"
+            },
+            {
+                image_url: "images/sz0a3sTi.webp",
+                caption: "Video", 
+                subtitle: "Sanchez v Colwill: McLaren F1 driver Lando Norris coaches Chelsea stars!",
+                title: "Guardiola: We know Arsenal will challenge us for next few years"
+            },
+            {
+                image_url: "images/tKHWpTiu.webp",
+                caption: "Video", 
+                subtitle: "The BEST OF Alexander Isak this season",
+                title: "Guardiola: We know Arsenal will challenge us for next few years"
+            },
+            {
+                image_url: "images/8v72vVfc.webp",
+                caption: "Video", 
+                subtitle: "Hargreaves: The title race isn't over yet",
+                title: "Guardiola: We know Arsenal will challenge us for next few years"
+            },
+            {
+                image_url: "images/GettyImages-1877677925.webp",
+                caption: "No Room For Racism", 
+                subtitle: "Johnson: Respect different cultures and each other"
+            },
+        ],
+        interviews: [
+            {
+                image_url: "images/4VUWT9he.webp",
+                caption: "Video", 
+                subtitle: "Watch: How the title race swung Man City's way in Matchweek 33"
+            },
+            {
+                image_url: "images/sz0a3sTi.webp",
+                caption: "Video", 
+                subtitle: "Sanchez v Colwill: McLaren F1 driver Lando Norris coaches Chelsea stars!"
+            },
+            {
+                image_url: "images/tKHWpTiu.webp",
+                caption: "Video", 
+                subtitle: "The BEST OF Alexander Isak this season"
+            },
+            {
+                image_url: "images/8v72vVfc.webp",
+                caption: "Video", 
+                subtitle: "Hargreaves: The title race isn't over yet"
+            },
+            {
+                image_url: "images/tKHWpTiu.webp",
+                caption: "Video", 
+                subtitle: "The BEST OF Alexander Isak this season",
+                title: "Guardiola: We know Arsenal will challenge us for next few years"
+            },
+        ],
+        fanMails: [
+            {
+                image_url: "images/2000425085.webp",
+                caption: "No Room For Racism", 
+                subtitle: "Theo wins No Room For Racism poetry competition"
+            },
+            {
+                image_url: "images/GettyImages-1877677925.webp",
+                caption: "No Room For Racism", 
+                subtitle: "Johnson: Respect different cultures and each other"
+            },
+            {
+                image_url: "images/PL2223-NRFR-Large.webp",
+                caption: "No Room For Racism", 
+                subtitle: "Luton renew fight against racism after horrifying online abuse sent to players"
+            },
+            {
+                image_url: "images/8v72vVfc.webp",
+                caption: "No Room For Racism", 
+                subtitle: "Three-year progress update on No Room For Racism Action Plan"
+            },
+            {
+                image_url: "images/tKHWpTiu.webp",
+                caption: "Video", 
+                subtitle: "The BEST OF Alexander Isak this season"
+            },
+        ]
+
+    },
+    tickets: {
+        header:    {
+            title: "Tickets",
+            filters: [
+                "Tickets",
+                "Safe Ticket buying"
+            ],
+        }
+    },
+    clubs: {
+        header: {
+            title: "Clubs",
+            filters: [
+            ],
+            pageType: "injury"
+        },
+        filters: [
+       
+            {
+                currentFilter: "2023/24", 
+                filterType: "Filter by Season", 
+                filters: [
+                    "2023/24",
+                    "2022/23",
+                    "2021/22",
+                    "2020/21",
+                    "2018/19",
+                    "2017/18",
+                    "2016/17",
+                    "2015/16",
+                ]
+            },
+        ],
+        standingPage: true
+    },
+    players: {
+        header: {
+            title: "Players",
+            filters: [
+            ],
+            pageType: "injury"
+        },
+        filters: [
+            {
+                currentFilter: "All Clubs", 
+                filterType: "Filter by club", 
+                filters: [
+                    "All Clubs",
+                    "Arsenal",
+                    "Aston Villa",
+                    "Bournemouth",
+                    "Brentford",
+                    "Brighton & Hove Albion",
+                    "Burnley",
+                    "Chelsea",
+                    "Crystal Palace"
+                ]
+            },
+            {
+                currentFilter: "2023/24", 
+                filterType: "Filter by Season", 
+                filters: [
+                    "2023/24",
+                    "2022/23",
+                    "2021/22",
+                    "2020/21",
+                    "2018/19",
+                    "2017/18",
+                    "2016/17",
+                    "2015/16",
+                ]
+            },
+        ],
+        standingPage: true
+    },
+    awards: {
+        header: {
+            title: "Awards",
+            filters: [
+                "Awards",
+                "All Time Awards",
+            ],
+        },
+        filters: [
+            {
+                currentFilter: "Month", 
+                filterType: "Filter by Type", 
+                filters: [
+                    "Month",
+                    "Season"
+                ]
+            },
+            {
+                currentFilter: "Monthly Award", 
+                filterType: "Filter by Award", 
+                filters: [
+                    "Monthly Awards",
+                    "Player of the Month",
+                    "Manager of the Month",
+                    "Save of the Month",
+                    "Season Awards",
+                    "Player of the Season",
+                    "Manager of the Season",
+                    "Young Player of the Season",
+                    "Goal of the Season",
+                    "Save of the Season",
+                    "Game Changer",
+                    "Golden Boot",
+                    "Golden Glove",
+                    "Playmaker",
+                    "Most Improbable Comeback",
+                    "Most Powerful Goal",
+                ]
+            },
+            {
+                currentFilter: "2023/24", 
+                filterType: "Filter by Season", 
+                filters: [
+                    "2023/24",
+                    "2022/23",
+                    "2021/22",
+                    "2020/21",
+                    "2018/19",
+                    "2017/18",
+                    "2016/17",
+                    "2015/16",
+                ]
+            },
+        ],
+    }
 }

@@ -142,6 +142,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    cursor: pointer;
 }
 .reset-filter p {
     font-size: 0.7rem;
@@ -179,6 +180,7 @@ main {
 
 .filter {
     position: relative;
+    cursor: pointer;
 }
 .filter ul {
     position: absolute;

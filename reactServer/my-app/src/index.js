@@ -8,6 +8,11 @@ import './injury.css'
 import './stats.css'
 import './news.css'
 import './watchLive.css'
+import './video.css'
+import './tickets.css'
+import './clubs.css'
+import './players.css'
+import './awards.css'
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';

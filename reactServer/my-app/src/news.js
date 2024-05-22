@@ -2,9 +2,8 @@ import Ads from "./fixtures/ads";
 import FixtureHeader from "./fixtures/fixtureHeader";
 import PageFiltersSection from "./fixtures/pageFiltersSection";
 import LargeImage from "./home/sections/largeImage";
-import MediumImage from "./home/sections/mediumImage";
-import SmallImage from "./home/sections/smallImage";
-import { latestVideoSection, pages } from "./utils";
+
+import { pages } from "./utils";
 
 export default function News() {
     return (

@@ -34,7 +34,7 @@ export default function Footer() {
                                     link.dropdown.map((page) => {
                                         return(
                                             <a href="">
-                                                <li>{page.name} { page.externalLink && (<i class="fa-solid fa-arrow-up-right-from-square"></i>) }</li>
+                                                <li>{page.name} { page.externalLink && (<i className="fa-solid fa-arrow-up-right-from-square"></i>) }</li>
                                             </a>
                                         )
                                     })

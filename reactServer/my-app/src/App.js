@@ -9,6 +9,11 @@ import Transfers from "./transfers";
 import Stats from "./stats";
 import News from "./news";
 import WatchLive from "./watchLive";
+import VideoPage from "./video";
+import Tickets from "./tickets";
+import Clubs from "./clubs";
+import Players from "./players";
+import Awards from "./awards";
 
 function App() {
   const router = createBrowserRouter(createRoutesFromElements(
@@ -22,6 +27,11 @@ function App() {
       <Route path="stats" element={<Stats />}></Route>
       <Route path="news" element={<News />}></Route>
       <Route path="watch_live" element={<WatchLive />}></Route>
+      <Route path="video" element={<VideoPage />}></Route>
+      <Route path="tickets" element={<Tickets />}></Route>
+      <Route path="clubs" element={<Clubs />}></Route>
+      <Route path="players" element={<Players />}></Route>
+      <Route path="awards" element={<Awards />}></Route>
     </Route>
   ))
   return (

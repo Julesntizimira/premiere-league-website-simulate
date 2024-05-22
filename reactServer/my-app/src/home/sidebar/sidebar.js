@@ -101,13 +101,18 @@ export default function SideBar() {
                     <p>All times shown are your <strong>local time</strong></p>
                 </div>
                 {matches.pre.map((day) => {
+                    
                     return(
                         <div className="comming-matches">
                         <p className="dates">{day.date}</p>
                         {
+                           
                             day.dateMatches.map(container => {
                                 return (
-                                    <MatchContainer container={container}/>
+                                    <MatchContainer 
+                                        container={container}
+                                        sidebar={true}
+                                    />
                                 )
                             })
                         }
