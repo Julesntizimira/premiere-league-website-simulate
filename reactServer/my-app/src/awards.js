@@ -1,10 +1,7 @@
 import Ads from "./fixtures/ads";
 import FixtureHeader from "./fixtures/fixtureHeader";
-import HublotTimeAds from "./fixtures/hublotTimeAds";
-import { featured, players, sponsors } from "./utils";
+import { players, sponsors } from "./utils";
 
-import Match from "./home/sidebar/match";
-import { matches } from "./utils";
 
 import { pages } from "./utils";
 

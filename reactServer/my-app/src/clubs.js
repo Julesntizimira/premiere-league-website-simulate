@@ -1,4 +1,3 @@
-import ClubContentContainer from "./clubs/clubContentContainer";
 import Ads from "./fixtures/ads";
 import FixtureHeader from "./fixtures/fixtureHeader";
 import PageFiltersSection from "./fixtures/pageFiltersSection";

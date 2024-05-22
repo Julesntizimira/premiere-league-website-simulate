@@ -1,5 +1,4 @@
 import BelowLink from "../home/sidebar/belowLink"
-import { teams } from "../utils";
 
 
 export default function StatsContainer (props) {

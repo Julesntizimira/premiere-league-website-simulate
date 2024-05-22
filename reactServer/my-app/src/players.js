@@ -1,4 +1,3 @@
-import ClubContentContainer from "./clubs/clubContentContainer";
 import Ads from "./fixtures/ads";
 import FixtureHeader from "./fixtures/fixtureHeader";
 import PageFiltersSection from "./fixtures/pageFiltersSection";
@@ -40,7 +39,7 @@ export default function Players() {
                                                 <p>{player.position}</p>
                                             </td>
                                             <td className="arrow-cell">
-                                            <div className="club-cont">
+                                                <div className="club-cont">
                                                     <div className="club-img-cont">
                                                         <img src={player.country.flag_url} alt={`${teams[0].name}-logo`} />
                                                     </div>

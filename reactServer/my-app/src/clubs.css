@@ -82,8 +82,6 @@
     justify-content: flex-start;
     margin: 0;
   }
-  .standing-big.clubs tbody tr td.stadium-cell {
-  }
  
   .standing-big.clubs tbody tr {
     cursor: pointer;
