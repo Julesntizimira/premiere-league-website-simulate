@@ -10,7 +10,7 @@ export default function Header() {
                     {
                         teams.map((team) => {
                             return (
-                                <a className="logo-link" href="#">
+                                <a className="logo-link" href="#home">
                                     <div className="image-container">
                                         <img className="logo-img" src={team.image_url} alt={`${team.image_url}-logo`} />
                                     </div>
@@ -36,7 +36,7 @@ export default function Header() {
                                                 {
                                                     link.dropdown.map((page) => {
                                                         return(
-                                                            <a href="">
+                                                            <a href="#home">
                                                                 <li>{page.name}</li>
                                                             </a>
                                                         )
@@ -54,13 +54,13 @@ export default function Header() {
                             <div className="nav-link">
                                 <h2>No Room For Racism</h2>
                             </div>
-                            <a className="login-link" href="#"><button className="btn-login"><h2>Sign in</h2></button></a>
+                            <a className="login-link" href="#home"><button className="btn-login"><h2>Sign in</h2></button></a>
                         </div>
                         <div className="search-icon">
                             <i className="fa-solid fa-magnifying-glass icon"></i>
                         </div>
                         <div className="hamburger-menu">
-                            <a href="">
+                            <a href="#home">
                                 <i className="fa-solid fa-bars"></i>
                             </a>
                         </div>
@@ -85,10 +85,10 @@ export default function Header() {
             <div className="latest-match">
                 <ul>
                     <li>
-                        <a href="">Latest</a>
+                        <a href="#home">Latest</a>
                     </li>
                     <li>
-                        <a href="">Matches</a>
+                        <a href="#home">Matches</a>
                     </li>
                 </ul>
             </div>
