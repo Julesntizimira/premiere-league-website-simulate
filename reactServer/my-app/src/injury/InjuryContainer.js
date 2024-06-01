@@ -10,7 +10,7 @@ export default function InjuryContainer (props) {
                 <img src={team_logo} alt="" />
             </h3>
             <p>
-                <a href="">
+                <a href="#home">
                     More detail
                     <i className="fa-solid fa-arrow-up-right-from-square"></i>
                 </a>

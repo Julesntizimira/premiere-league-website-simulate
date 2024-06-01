@@ -2,7 +2,7 @@ export default function MediumImage(props) {
     const {image_url, caption, subtitle, relatedNews, color, svg} = props.container;
     return (
         <div className="medium-img-container">
-            <a href="#">
+            <a href="#home">
                 <div className={color ? `img-cont ${color}`: "img-cont"}>
                     <img className="medium-img" src={image_url} alt="" />
                     {svg && (
@@ -23,7 +23,7 @@ export default function MediumImage(props) {
                     <div className="playlist-column">
                         {relatedNews.map((news) => {
                             return (
-                                <a href="#">
+                                <a href="#home">
                                     <div className="aside-logo-container">{news.type === "video" ? (<i className="fa-solid fa-play"></i>) : (<i className="fa-solid fa-bars"></i>)}</div>
                                     <p>{news.title}</p>
                                 </a>

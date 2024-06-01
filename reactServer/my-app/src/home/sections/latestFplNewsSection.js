@@ -8,7 +8,7 @@ export default function LatestFplNewsSection() {
             <div className="editors-choice-container">
 
         
-                <h2 className="section-title">Latest FPL News <a href="#"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
+                <h2 className="section-title">Latest FPL News <a href="#home"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
             
                 <div className="editors-choice-imgs">
                     {

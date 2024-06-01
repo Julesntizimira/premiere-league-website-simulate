@@ -26,7 +26,7 @@ export default function TeamTransfer (props) {
                                         <td>{transfer.type}</td>
                                         <td>{transfer.club}</td>
                                         <td>
-                                            <a href="">
+                                            <a href="#home">
                                                 Details
                                                 <i className="fa-solid fa-arrow-up-right-from-square"></i>
                                             </a>

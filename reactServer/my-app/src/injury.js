@@ -18,9 +18,6 @@ export default function InjuryNews () {
     return (
         <main >
             <Ads/>
-            {/* <section className="fixtures-header injury">
-                    <h1>Injury News</h1>
-            </section> */}
             <FixtureHeader container={pages.injuryNews.header}/>
 
             <div className="injury-section-wrapper">

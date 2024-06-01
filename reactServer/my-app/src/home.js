@@ -31,7 +31,7 @@ export default function Home () {
                         <div className="adv-title">NIKE BALL HUB</div>
                         <p className="adv">Discover the history of the Nike ball and its 24-year association with the Premier League, from the Nike Geo Merlin in 2000/01 to the Nike Flight in 2023/24.</p>
                         <div className="adv-link">
-                            <a href="">
+                            <a href="#home">
                                 <p>Explore now <i className="fa-solid fa-arrow-right"></i></p>
                             </a>
                         </div>

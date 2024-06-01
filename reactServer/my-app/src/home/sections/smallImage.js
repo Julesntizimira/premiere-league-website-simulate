@@ -2,7 +2,7 @@ export default function SmallImage(props) {
     const {image_url, caption, subtitle} = props.container;
     return (
         <div className="small-img-container">
-            <a href="#">
+            <a href="#home">
                 <div className="img-cont">
                     <img className="small-img" src={image_url} alt="" />
                 </div>

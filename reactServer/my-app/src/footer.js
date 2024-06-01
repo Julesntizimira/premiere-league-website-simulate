@@ -12,7 +12,7 @@ export default function Footer() {
                 {
                     sponsors.map((sponsor) => {
                         return (
-                            <a href="">
+                            <a href="#home">
                             <div className="sponsor-logo-cont">
                                 <img src={sponsor.image_url} alt="" />
                                 <p>{sponsor.category}</p>
@@ -33,7 +33,7 @@ export default function Footer() {
                                             {
                                     link.dropdown.map((page) => {
                                         return(
-                                            <a href="">
+                                            <a href="#home">
                                                 <li>{page.name} { page.externalLink && (<i className="fa-solid fa-arrow-up-right-from-square"></i>) }</li>
                                             </a>
                                         )
@@ -50,15 +50,15 @@ export default function Footer() {
                 <div className="footer-bottom-left">
                     <h4>© PREMIER LEAGUE 2024</h4>
                     <div>
-                        <a>Modern Slavery Statement</a>
+                        <a href="#home">Modern Slavery Statement</a>
                         <div className="footer-dot"></div>
-                        <a href="">Equality, Diversity and Inclusion Standard</a>
+                        <a href="#home">Equality, Diversity and Inclusion Standard</a>
                         <div className="footer-dot"></div>
-                        <a>Terms & Conditions</a>
+                        <a href="#home">Terms & Conditions</a>
                         <div className="footer-dot"></div>
-                        <a>Policies</a>
+                        <a href="#home">Policies</a>
                         <div className="footer-dot"></div>
-                        <a>Cookie Policy</a>
+                        <a href="#home">Cookie Policy</a>
                         <div className="footer-dot"></div>
                         <a href="#pr-logo">Back To Top</a>
                     </div>

@@ -1,11 +1,8 @@
 import Ads from "./fixtures/ads";
 import FixtureHeader from "./fixtures/fixtureHeader";
 import HublotTimeAds from "./fixtures/hublotTimeAds";
-
 import Match from "./home/sidebar/match";
-import { matches } from "./utils";
-
-import { pages } from "./utils";
+import { matches, pages } from "./utils";
 
 import PageFiltersSection from "./fixtures/pageFiltersSection";
 
@@ -24,13 +21,13 @@ export default function WatchLive () {
                 <div className="broadcasters">
                     <h3>Broadcasters</h3>
                     <div className="broadcaster-cont">
-                        <a className="broadcaster" href="">
+                        <a className="broadcaster" href="#home">
                             <img src="images/watchlive/fracanal@x2.png" alt=""/>
                             <span>
                                 SuperSport <i className="fa-solid fa-arrow-up-right-from-square"></i>
                             </span>
                         </a>
-                        <a className="broadcaster" href="">
+                        <a className="broadcaster" href="#home">
                             <img src="images/fixtures/Supersport2012.jpg" alt="" />
                             <span>
                                 Canal + Afrique  <i className="fa-solid fa-arrow-up-right-from-square"></i>

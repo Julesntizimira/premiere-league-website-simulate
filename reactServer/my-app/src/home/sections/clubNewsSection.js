@@ -10,7 +10,7 @@ export default function ClubNewsSection () {
             <div className="editors-choice-container">
 
         
-                <h2 className="section-title">Club News <a href="#"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
+                <h2 className="section-title">Club News <a href="#home"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
             
                 <div className="editors-choice-imgs">
                     {clubNewsSection.map((container) => {

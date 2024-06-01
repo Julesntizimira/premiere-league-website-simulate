@@ -1,4 +1,4 @@
-import { matches, featured, teams } from "../../utils"
+import { matches, featured} from "../../utils"
 import MatchContainer from "./matchContainer"
 import Review from "./review"
 import SmallTable from "./smallTable"
@@ -120,7 +120,7 @@ export default function SideBar() {
                     )
                 })}
                 <div className="fixtures">
-                    <a href="">
+                    <a href="#home">
                         <p><i className="fa-regular fa-calendar-plus"></i> Add fixtures to calendar</p>
                     </a>
                 </div>
@@ -150,7 +150,7 @@ export default function SideBar() {
                 featured.players.map((player) => {        
                     return (
                         <div className="news-headings-box six player">
-                            <a href="">
+                            <a href="#home">
                                 <h2 className="top-title">Featured Player</h2>
                                 <div className="top-part">
                                     <svg className="media-thumbnail__club-svg" viewBox="150 0 350 180" xmlns="http://www.w3.org/2000/svg">
@@ -194,7 +194,7 @@ export default function SideBar() {
                 featured.managers.map((manager) => {        
                     return (
                         <div className="news-headings-box six">
-                            <a href="">
+                            <a href="#home">
                                 <h2 className="top-title">Featured Manager</h2>
                                 <div className="top-part">
                                     <svg className="media-thumbnail__club-svg" viewBox="150 0 350 180" xmlns="http://www.w3.org/2000/svg">

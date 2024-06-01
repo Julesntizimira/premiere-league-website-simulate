@@ -6,7 +6,7 @@ export default function EditorsChoiceSection () {
     return (
         <section className="editors-choice">
             <div className="editors-choice-container">
-                <h2 className="section-title">Editor's Choice <a href="#"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
+                <h2 className="section-title">Editor's Choice <a href="#home"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
                 <div className="editors-choice-imgs">
                     {editorsChoiceSection.map((container) => {
                         return (

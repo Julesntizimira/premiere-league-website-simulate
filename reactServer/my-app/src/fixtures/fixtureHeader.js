@@ -8,7 +8,7 @@ export default function FixtureHeader (props) {
                     {
                         filters.map((filter) => {
                             return (
-                                <a href="">
+                                <a href="#home">
                                     <li>{filter}</li>
                                 </a>
                             )

@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { pages } from "./utils";
 import MediumImage from "./home/sections/mediumImage";
-import BelowLink from "./home/sidebar/belowLink";
+
 
 export default function VideoPage() {
     const videos = [
@@ -24,16 +24,14 @@ export default function VideoPage() {
     const [ index, setIndex] = useState(0);
     const [ displayVideo, setDisplayVideo ] = useState(videos[index]); 
 
-    useEffect (() => {
-        setDisplayVideo(videos[index])
-    }, [index])
+  
     function handleForward() {
         if (index < videos.length - 1){
             setIndex(index + 1)
-            // setDisplayVideo(videos[index]);
+            setDisplayVideo(videos[index]);
         } else {
             setIndex(0);
-            // setDisplayVideo(videos[index]); 
+            setDisplayVideo(videos[index]); 
         }
     }
     function handleBackward() {
@@ -85,7 +83,7 @@ export default function VideoPage() {
                 </div>
             </section>
             <div className="video-page-wrapper">
-                <h2 className="section-title">Most Watched <a href="#"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
+                <h2 className="section-title">Most Watched <a href="#home"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
                 
                 <div className="editors-choice-imgs">
                     {
@@ -99,7 +97,7 @@ export default function VideoPage() {
                     }
                 </div>
 
-                <h2 className="section-title">Interviews <a href="#"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
+                <h2 className="section-title">Interviews <a href="#home"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
                 
                 <div className="editors-choice-imgs">
                     {
@@ -113,7 +111,7 @@ export default function VideoPage() {
                     }
                 </div>
 
-                <h2 className="section-title">Fan Mail <a href="#"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
+                <h2 className="section-title">Fan Mail <a href="#home"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
                 <div className="editors-choice-imgs">
                     {
                         pages.video.fanMails.map((container) => {
@@ -129,7 +127,7 @@ export default function VideoPage() {
             </div>
 
             <section className="popular-playlist">
-                    <h2 className="section-title">Popular Playlists <a href="#"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
+                    <h2 className="section-title">Popular Playlists <a href="#home"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
                     <div className="playlists-wrapper">
                         <div className="playlist-cont">
                             <img src="images/video/GettyImages-1655561195.webp" alt=""/>
@@ -162,7 +160,7 @@ export default function VideoPage() {
                     </div>
             </section>
             <div className="video-page-wrapper">
-                <h2 className="section-title">Most Watched <a href="#"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
+                <h2 className="section-title">Most Watched <a href="#home"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
                 
                 <div className="editors-choice-imgs">
                     {
@@ -176,7 +174,7 @@ export default function VideoPage() {
                     }
                 </div>
 
-                <h2 className="section-title">Interviews <a href="#"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
+                <h2 className="section-title">Interviews <a href="#home"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
                 
                 <div className="editors-choice-imgs">
                     {
@@ -190,7 +188,7 @@ export default function VideoPage() {
                     }
                 </div>
 
-                <h2 className="section-title">Fan Mail <a href="#"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
+                <h2 className="section-title">Fan Mail <a href="#home"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
                 <div className="editors-choice-imgs">
                     {
                         pages.video.fanMails.map((container) => {
@@ -206,12 +204,12 @@ export default function VideoPage() {
                     <div className="personalised-video-content">
                         <h3 className="personalised-video-title">All of Your Club’s Videos</h3>
                         <p>Login and confirm your favourite team to get access to more personalised video content, including iconic moments, match highlights and best ever goals.</p>
-                        <a href="#"><span>Confirm Your Favorite Team <i className="fa-solid fa-arrow-right"></i></span></a>
+                        <a href="#home"><span>Confirm Your Favorite Team <i className="fa-solid fa-arrow-right"></i></span></a>
                     </div>
                     <div className="personalised-video-img">
                     </div>
                 </div>
-                <h2 className="section-title">Things you may have missed <a href="#"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
+                <h2 className="section-title">Things you may have missed <a href="#home"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
                 
                 <div className="editors-choice-imgs">
                     {
@@ -225,7 +223,7 @@ export default function VideoPage() {
                     }
                 </div>
 
-                <h2 className="section-title">Quickfire questions <a href="#"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
+                <h2 className="section-title">Quickfire questions <a href="#home"><span>More News <i className="fa-solid fa-arrow-right"></i></span></a></h2>
                 
                 <div className="editors-choice-imgs">
                     {

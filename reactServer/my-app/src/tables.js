@@ -68,7 +68,7 @@ export default function Tables() {
                                                 <div className="club-img-cont">
                                                     <img src={team.image_url} alt={`${team.name}-logo`} />
                                                 </div>
-                                                <a href="">
+                                                <a href="#home">
                                                     <span className="long">{team.name}</span>
                                                     <span className="short">{team.shortName}</span>
                                                 </a>

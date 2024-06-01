@@ -23,7 +23,7 @@ export default function TeamInjury (props) {
                                         <td className="pl-name">{injury.name}</td>
                                         <td>{injury.injury}</td>
                                         <td>
-                                            <a href="">
+                                            <a href="#home">
                                                 Details
                                                 <i className="fa-solid fa-arrow-up-right-from-square"></i>
                                             </a>

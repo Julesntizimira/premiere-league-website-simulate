@@ -14,7 +14,7 @@ export default function PageFilter (props) {
             <ul>
                 {filters.map((filter) => {
                     return (
-                        <a href="">
+                        <a href="#home">
                             <li>{filter}</li>
                         </a>
                     )

@@ -22,7 +22,7 @@ export default function SmallTable() {
                                 <div className="club-img-cont">
                                     <img src={team.image_url} alt={`${team.name}-logo`} />
                                 </div>
-                                <a href="">{team.name}</a>
+                                <a href="#home">{team.name}</a>
                             </div>
                             </td>
                             <td className="pl">{team.played}</td>

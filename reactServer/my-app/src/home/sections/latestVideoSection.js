@@ -6,7 +6,7 @@ import BelowLink from "../sidebar/belowLink";
 export default function LatestVideoSection() {
     return (
         <section className="latest-videos">
-            <h2 className="section-title">Latest Videos <a href="#"><span>All Videos <i className="fa-solid fa-arrow-right"></i></span></a></h2>
+            <h2 className="section-title">Latest Videos <a href="#home"><span>All Videos <i className="fa-solid fa-arrow-right"></i></span></a></h2>
             <div className="right-grid">
                 <LargeImage container={latestVideoSection.largeImage}/>
 

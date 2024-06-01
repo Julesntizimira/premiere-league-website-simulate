@@ -2,7 +2,7 @@ export default function LargeImage(props) {
     const {image_url, caption, title, subtitle} = props.container;
     return (
         <div className="large-img-container">
-            <a href="#">
+            <a href="#home">
                 <div className="img-cont">
                     <img className="large-img"  src={image_url} alt="imageThumbnail" />
                 </div>

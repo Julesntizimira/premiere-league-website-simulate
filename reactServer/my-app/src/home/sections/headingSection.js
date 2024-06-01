@@ -15,19 +15,19 @@ export default function HeadingSection () {
             <div className="news-headings-bottom">
                 <div className="playlist">
                     <div>
-                        <a href="#">
+                        <a href="#home">
                             <div className="aside-logo-container"><i className="fa-solid fa-play"></i></div>
                             <p>Watch: How the title race swung Man City's way in Matchweek 33</p>
                         </a>  
                     </div>
                     <div>
-                        <a href="#">
+                        <a href="#home">
                             <div className="aside-logo-container"><i className="fa-solid fa-bars"></i></div>
                             <p>Why the Premier League title race is NOT over yet</p>
                         </a> 
                     </div>
                     <div>
-                        <a href="#">
+                        <a href="#home">
                             <div className="aside-logo-container"><i className="fa-solid fa-bars"></i></div>
                             <p>Newcastle ‘unsilence the crowd’ by helping deaf fans feel the noise</p>
                         </a> 
